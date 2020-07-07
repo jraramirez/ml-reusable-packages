@@ -1,0 +1,20 @@
+# TextClassificationUnsupervised
+
+name: TextClassificationUnsupervised
+
+conda_env: "../../conda_envs/TextClassificationUnsupervised.yml"
+
+entry_points:
+  main:
+    parameters:
+      mode: {type: string, default: "train"}
+      run_id_model: {type: string, default: ""}
+      number_of_topics: {type: float, default: -1 }
+      alpha: {type: float, default: -1 }
+      beta: {type: float, default: -1 }
+    command: "python main.py
+                --mode {mode}
+                --run_id_model {run_id_model}
+                --number_of_topics {number_of_topics}
+                --alpha {alpha}
+                --beta {beta}"

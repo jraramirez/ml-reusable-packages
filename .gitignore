@@ -1,0 +1,19 @@
+# temporary folder for data
+data/*
+!data/.gitkeep 
+
+# temporary folder for models
+models/*
+!models/.gitkeep
+
+mlruns/
+backend-store/
+
+# Python temporary files
+__pycache__/
+*.py[co]
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+._*

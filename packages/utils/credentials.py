@@ -1,0 +1,1 @@
+TRACKING_URI = "http://ws-tst-adb.erni2.ch:5555/"
