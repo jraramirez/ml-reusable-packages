@@ -14,6 +14,5 @@ if __name__ == "__main__":
     
     classifier = Unsupervised.Classifier(args)
     data = classifier.getSampleData()
-    print(data)
     classifier.preProcess()
-    classifier.run()
+    classifier.run(args)

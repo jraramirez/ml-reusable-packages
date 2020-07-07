@@ -21,12 +21,13 @@ import mlflow
 from mlflow import log_metric, log_param, log_artifact
 
 sys.path.append("packages/utils")
+sys.path.append("../utils")
 import defaults
 import credentials
 
 class Classifier():
 
-    def __init__(self, tracking_uri, args):
+    def __init__(self, args):
 
         with mlflow.start_run():
             self.tracking_uri = credentials.TRACKING_URI
@@ -34,17 +35,17 @@ class Classifier():
 
             return
 
-    def getSampleData():
+    def getSampleData(self):
         data = pd.read_csv(os.path.join(defaults.DATA_PATH, "test.data.csv"))
         return data
 
-    def preProcess():
+    def preProcess(self):
         return
 
-    def train():
+    def train(self):
         return
 
-    def predict():
+    def predict(self):
         return
 
     def run(self, args):

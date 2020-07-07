@@ -6,6 +6,7 @@ data/*
 models/*
 !models/.gitkeep
 
+# mlflow
 mlruns/
 backend-store/
 
